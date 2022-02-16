@@ -1,0 +1,357 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  
+    padding: 30px 20px;
+    border-top: 10px solid lightblue;
+  
+    background-color: darkgrey;
+  }
+  
+  header .name {
+    color: white;
+
+    margin-bottom: 15px;
+  }
+  
+  header .navigation {
+    align-self: center;
+    justify-self: right;
+
+    text-align: center;
+  }
+  
+  header .navigation a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: small;
+    
+    color: white;
+  
+    border-radius: 5px;
+  
+    background-color: lightblue;
+    width: 90px;
+    padding: 10px;
+    margin-left: 30px;
+  }
+  
+  header .navigation a:hover {
+    background-color: #f3efdd;
+
+    pointer-events: stroke;
+  }
+  
+  .cover {
+    display: grid;
+    grid-template-areas: ". cover-content .";
+    grid-template-columns: 1fr 72ch 1fr;
+  
+    background-color: darkgrey;
+    border-bottom: 10px solid lightblue;
+  }
+  
+  .cover .cover-content {
+    grid-area: cover-content;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  
+    color: white;
+  }
+  
+  .cover .cover-content h2 {
+    font-size: 5rem;
+    text-align: left;
+  
+    margin-bottom: 20px;
+  }
+  
+  .cover .cover-content p {
+    font-size: 1.3rem;
+    font-weight: 500;
+  
+    line-height: 1.8;
+  }
+  
+  .cover .cover-content strong {
+    color: lightblue;
+  }
+  
+  .cover .cover-content em {
+    text-decoration: none;
+    /* text-decoration-color: lightblue; */
+  }
+  
+  .about-me {
+    display: grid;
+    grid-template-areas: ". about-me-content .";
+    grid-template-columns: 1fr 72ch 1fr;
+  
+    background-color: darkgrey;
+  }
+  
+  .about-me .about-me-content {
+    grid-area: about-me-content;
+  
+    margin: 50px 0px;
+  
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  
+  .about-me .about-me-content h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .about-me .about-me-content h4 {
+    margin-top: 30px;
+  }
+  
+  .about-me .about-me-content p,
+  .about-me .about-me-content ul {
+    line-height: 1.5;
+  
+    margin-top: 10px;
+  }
+  
+  .about-me .about-me-content ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  
+    margin-left: 40px;
+  }
+  
+  .portfolio-section {
+    border-top: 10px solid lightblue;
+    border-bottom: 10px solid lightblue;
+  
+    background-color: darkgrey;
+    color: white;
+  }
+  
+  .portfolio-section h3 {
+    text-transform: uppercase;
+    text-align: center;
+  
+    font-size: 2.5rem;
+  
+    margin-top: 50px;
+  }
+  
+  .portfolio-section .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+  
+    padding: 30px 50px;
+  }
+  
+  .portfolio-section .project-gallery .project {
+    background-color: lightgrey;
+  
+    display: grid;
+    grid-template-rows: 38px 1fr 38px 20px;
+    grid-gap: 15px;
+  
+    border: 10px solid lightblue;
+    border-radius: 10px;
+  
+    padding: 40px;
+  }
+  
+  .portfolio-section .project-gallery .project h4 {
+    font-size: 2rem;
+  }
+  
+  .portfolio-section .project-gallery .project p {
+    font-size: 1.3rem;
+    font-weight: 500;
+  
+    line-height: 1.5;
+  }
+  
+  .portfolio-section .project-gallery .project .read-more-button {
+    place-self: center;
+  
+    padding: 10px 70px;
+    border-radius: 5px;
+  
+    background-color: darkgrey;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  
+  .portfolio-section .project-gallery .project .read-more-button:hover {
+    background-color: lightblue;
+  }
+  
+  .portfolio-section .project-gallery .project a {
+    place-self: center;
+  
+    color: #24292e;
+  }
+
+  .github-link{
+    text-decoration: none;
+
+    margin-top: 10px;
+
+    padding: 10px 70px;
+  }
+  
+  .experience {
+    display: grid;
+    grid-template-areas: ". experience-content .";
+    grid-template-columns: 1fr 72ch 1fr;
+  
+    background-color: darkgrey;
+  }
+  
+  .experience .experience-content {
+    grid-area: experience-content;
+  
+    color: white;
+    font-size: 1.3rem;
+  
+    margin: 50px 0px;
+  }
+  
+  .experience .experience-content h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+  
+    margin-bottom: 30px;
+  }
+  
+  .experience .experience-content h4 {
+    font-weight: 600;
+  
+    margin: 10px 0px;
+  }
+  
+  .experience .experience-content p {
+    font-weight: 500;
+    line-height: 1.2;
+  
+    margin-bottom: 30px;
+  }
+
+  .technical-skills {
+    list-style-type: circle;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-areas: ". experience-content .";
+    grid-template-columns: 1fr 72ch 1fr;
+  
+    background-color: darkgrey;
+    border-top: 10px solid lightblue;
+  }
+  
+  .contact .contact-content {
+    grid-area: experience-content;
+  
+    color: white;
+    font-size: 1.3rem;
+  
+    margin: 50px 50px;
+  }
+  
+  .contact .contact-content h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+  
+    margin-bottom: 30px;
+  }
+
+  .contact {
+    text-decoration: none;
+  }
+  
+  footer {
+    color: white;
+    background-color: lightblue;
+  
+    font-weight: 600;
+  
+    padding: 20px 30px;
+  }
+  
+  @media screen and (max-width: 1225px) {
+    .cover-content,
+    .about-me-content,
+    .experience-content {
+      padding: 0px 20px;
+    }
+  
+    .portfolio-section .project-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .portfolio-section .project-gallery .project .read-more-button {
+      padding: 10px 50px;
+    }
+  }
+
+  .button {
+    background-color: darkgrey;
+    color: white;
+
+    position: fixed;
+
+    padding: 10px;
+
+    border: none;
+    border-radius: 5px;
+}
+
+  .fix-me button {
+    position: fixed;
+    top: 400px;
+  }
+  
+  @media screen and (max-width: 840px) {
+    header {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+  
+      place-items: center;
+    }
+  
+    header .navigation {
+      justify-self: center;
+    }
+  
+    header .navigation a {
+      margin-left: 10px;
+    }
+  
+    .cover,
+    .experience,
+    .about-me,
+    .portfolio-section .project-gallery {
+      grid-template-columns: 1fr;
+    }
+  }
